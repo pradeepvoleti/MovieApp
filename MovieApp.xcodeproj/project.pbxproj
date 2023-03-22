@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		0402B456296E912A00893E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B455296E912A00893E87 /* AppDelegate.swift */; };
 		0402B458296E912A00893E87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B457296E912A00893E87 /* SceneDelegate.swift */; };
-		0402B45A296E912A00893E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B459296E912A00893E87 /* ViewController.swift */; };
 		0402B45D296E912A00893E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0402B45B296E912A00893E87 /* Main.storyboard */; };
 		0402B45F296E912C00893E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0402B45E296E912C00893E87 /* Assets.xcassets */; };
 		0402B462296E912C00893E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0402B460296E912C00893E87 /* LaunchScreen.storyboard */; };
 		0402B46D296E912D00893E87 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B46C296E912D00893E87 /* MovieAppTests.swift */; };
 		0402B477296E912D00893E87 /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B476296E912D00893E87 /* MovieAppUITests.swift */; };
 		0402B479296E912D00893E87 /* MovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B478296E912D00893E87 /* MovieAppUITestsLaunchTests.swift */; };
+		0402B48A296EA14E00893E87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B489296EA14E00893E87 /* HomeViewController.swift */; };
+		0402B48C296EA15600893E87 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B48B296EA15600893E87 /* SearchViewController.swift */; };
+		0402B48E296EA5E200893E87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402B48D296EA5E200893E87 /* Constants.swift */; };
+		04A7AAD7296EAEF20055BF08 /* StaffPickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7AAD5296EAEF20055BF08 /* StaffPickCell.swift */; };
+		04A7AAD8296EAEF20055BF08 /* StaffPickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A7AAD6296EAEF20055BF08 /* StaffPickCell.xib */; };
+		04A7AADB296EF7160055BF08 /* AARatingBar+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7AAD9296EF7150055BF08 /* AARatingBar+UIView.swift */; };
+		04A7AADC296EF7160055BF08 /* AARatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7AADA296EF7160055BF08 /* AARatingBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		0402B452296E912A00893E87 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0402B455296E912A00893E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0402B457296E912A00893E87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0402B459296E912A00893E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0402B45C296E912A00893E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0402B45E296E912C00893E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0402B461296E912C00893E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		0402B472296E912D00893E87 /* MovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0402B476296E912D00893E87 /* MovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITests.swift; sourceTree = "<group>"; };
 		0402B478296E912D00893E87 /* MovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0402B489296EA14E00893E87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0402B48B296EA15600893E87 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0402B48D296EA5E200893E87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04A7AAD5296EAEF20055BF08 /* StaffPickCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPickCell.swift; sourceTree = "<group>"; };
+		04A7AAD6296EAEF20055BF08 /* StaffPickCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffPickCell.xib; sourceTree = "<group>"; };
+		04A7AAD9296EF7150055BF08 /* AARatingBar+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AARatingBar+UIView.swift"; sourceTree = "<group>"; };
+		04A7AADA296EF7160055BF08 /* AARatingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AARatingBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +113,16 @@
 			children = (
 				0402B455296E912A00893E87 /* AppDelegate.swift */,
 				0402B457296E912A00893E87 /* SceneDelegate.swift */,
-				0402B459296E912A00893E87 /* ViewController.swift */,
+				0402B489296EA14E00893E87 /* HomeViewController.swift */,
+				0402B48B296EA15600893E87 /* SearchViewController.swift */,
 				0402B45B296E912A00893E87 /* Main.storyboard */,
 				0402B45E296E912C00893E87 /* Assets.xcassets */,
 				0402B460296E912C00893E87 /* LaunchScreen.storyboard */,
 				0402B463296E912C00893E87 /* Info.plist */,
+				0402B48D296EA5E200893E87 /* Constants.swift */,
+				04A7AAD5296EAEF20055BF08 /* StaffPickCell.swift */,
+				04A7AAD6296EAEF20055BF08 /* StaffPickCell.xib */,
+				04A7AADD296EF7220055BF08 /* AARatingBar */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -125,6 +142,15 @@
 				0402B478296E912D00893E87 /* MovieAppUITestsLaunchTests.swift */,
 			);
 			path = MovieAppUITests;
+			sourceTree = "<group>";
+		};
+		04A7AADD296EF7220055BF08 /* AARatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				04A7AADA296EF7160055BF08 /* AARatingBar.swift */,
+				04A7AAD9296EF7150055BF08 /* AARatingBar+UIView.swift */,
+			);
+			path = AARatingBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0402B462296E912C00893E87 /* LaunchScreen.storyboard in Resources */,
+				04A7AAD8296EAEF20055BF08 /* StaffPickCell.xib in Resources */,
 				0402B45F296E912C00893E87 /* Assets.xcassets in Resources */,
 				0402B45D296E912A00893E87 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0402B45A296E912A00893E87 /* ViewController.swift in Sources */,
+				04A7AADC296EF7160055BF08 /* AARatingBar.swift in Sources */,
+				0402B48E296EA5E200893E87 /* Constants.swift in Sources */,
+				04A7AAD7296EAEF20055BF08 /* StaffPickCell.swift in Sources */,
 				0402B456296E912A00893E87 /* AppDelegate.swift in Sources */,
 				0402B458296E912A00893E87 /* SceneDelegate.swift in Sources */,
+				0402B48C296EA15600893E87 /* SearchViewController.swift in Sources */,
+				04A7AADB296EF7160055BF08 /* AARatingBar+UIView.swift in Sources */,
+				0402B48A296EA14E00893E87 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

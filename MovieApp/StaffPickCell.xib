@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="staffPickCell" rowHeight="200" id="KGk-i7-Jjw" customClass="StaffPickCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JEo-wK-gos">
+                        <rect key="frame" x="10" y="55" width="60" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4tm-uA-tWS"/>
+                            <constraint firstAttribute="width" secondItem="JEo-wK-gos" secondAttribute="height" multiplier="2:3" id="WnT-8m-bb1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgV-ql-Lhy">
+                        <rect key="frame" x="80" y="71" width="31" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYR-wt-7xH">
+                        <rect key="frame" x="80" y="90.333333333333329" width="42.333333333333343" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-v7-bHk" customClass="AARatingBar" customModule="MovieApp" customModuleProvider="target">
+                        <rect key="frame" x="80" y="114.66666666666667" width="100" height="20.000000000000014"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3mW-GU-DbN"/>
+                            <constraint firstAttribute="width" constant="100" id="B04-MX-7kg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" systemColor="systemOrangeColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXw-fy-Uv4">
+                        <rect key="frame" x="323.66666666666669" y="83" width="46.333333333333314" height="34.333333333333343"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dYR-wt-7xH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1bG-8y-Rzm"/>
+                    <constraint firstItem="JEo-wK-gos" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HKe-ZH-f5M"/>
+                    <constraint firstItem="KKc-v7-bHk" firstAttribute="leading" secondItem="dYR-wt-7xH" secondAttribute="leading" id="WnB-uv-P6b"/>
+                    <constraint firstItem="eXw-fy-Uv4" firstAttribute="centerY" secondItem="JEo-wK-gos" secondAttribute="centerY" id="b69-Az-0tK"/>
+                    <constraint firstItem="JEo-wK-gos" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cOt-zr-4Il"/>
+                    <constraint firstItem="KKc-v7-bHk" firstAttribute="top" secondItem="dYR-wt-7xH" secondAttribute="bottom" constant="5" id="cY0-Fz-0jL"/>
+                    <constraint firstItem="dYR-wt-7xH" firstAttribute="top" secondItem="XgV-ql-Lhy" secondAttribute="bottom" constant="5" id="n82-SS-2Cq"/>
+                    <constraint firstItem="JEo-wK-gos" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nj4-RC-Hlf"/>
+                    <constraint firstItem="dYR-wt-7xH" firstAttribute="leading" secondItem="XgV-ql-Lhy" secondAttribute="leading" id="pRo-wi-y6E"/>
+                    <constraint firstAttribute="trailing" secondItem="eXw-fy-Uv4" secondAttribute="trailing" constant="30" id="pXF-Sz-62I"/>
+                    <constraint firstItem="dYR-wt-7xH" firstAttribute="leading" secondItem="JEo-wK-gos" secondAttribute="trailing" constant="10" id="qMJ-UN-1hy"/>
+                    <constraint firstItem="KKc-v7-bHk" firstAttribute="leading" secondItem="JEo-wK-gos" secondAttribute="trailing" constant="10" id="xla-EW-fIQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ratingBar" destination="KKc-v7-bHk" id="NV4-8h-kNC"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
